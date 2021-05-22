@@ -1,0 +1,99 @@
+body {
+   background: #C9D6FF;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
+
+ .checkA{
+   padding-left: 20px;
+   padding-right: 20px;
+   display: auto;
+   margin-left: 350px;
+   margin-top: 0%;
+   
+}
+
+.check{
+
+   padding-right:20px;
+   padding-left: 20px;
+   margin-right: 0%;
+   margin-left: 10px;
+   margin-top: 0%;
+}
+
+
+
+@media screen and (min-width: 450px) {
+   .checkA{
+      margin-left: 135px;
+
+
+   }
+   .check{
+      margin-right: 5px;
+   }
+   
+}
+
+
+@media screen and (min-width: 767px){
+   .checkA{
+      margin-left: 75px;
+   }
+   .check{
+      margin-right: 5px;
+   }
+
+}
+
+@media screen and (min-width: 992px){
+   .checkA{
+      margin-left: 230px;
+   }
+
+}
+
+
+
+@media screen and (min-width: 1200px){
+ .checkA{
+   padding-left: 20px;
+   padding-right: 20px;
+   display: auto;
+   margin-left: 350px;
+   margin-top: 0%;
+   
+}
+}
+
+
+/* 
+@media screen and (max-width: 992px){
+   .checkA{
+      margin-left: 80px;
+   }
+
+}
+
+
+
+@media screen and (max-width: 992px){
+   .checkA{
+      margin-left: 80px;
+   }
+
+} */
+
+
+
+
+
+/* 
+@media screen and (max-width: 992px){
+   .checkA{
+      margin-left: 80px;
+   }
+
+}
+ */
