@@ -1,18 +1,11 @@
-//CONFIGURATION CALENDAR
-// const dateInput = document.getElementById('dateInput');
-// dateInput.min = new Date().toISOString().split("T")[0]; 
-
 class Task {
     constructor(name, contents, date, time) {
         this.name = name;
         this.contents = contents;
         this.date = date;
-        this.time = time
-        
+        this.time = time        
     }
-}
-// debugger
-// console.log(dateInput.getUTCDate);
+};
 
 class UI {
     addTask(task) {
@@ -49,7 +42,6 @@ class UI {
     resetForm(){
         document.getElementById('todo-list-form').reset();
     }
- 
     actionTask(element){
         if (element.name ==="btnSuccess") {
             element.parentElement.parentElement.parentElement.remove();
@@ -58,12 +50,7 @@ class UI {
             element.parentElement.parentElement.parentElement.remove();
             this.showMessage('Task Deleted', 'danger');
         }
-        
-
-            
-        
     }
-
     showMessage(message, cssClass) {
         const div = document.createElement('div');
         div.className = `alert alert-${cssClass} mt-4`;
@@ -75,7 +62,6 @@ class UI {
         setTimeout(() => {
             document.querySelector('.alert').remove();
         }, 3000);
-
     }
 }
 
@@ -91,29 +77,10 @@ document
     const ui = new UI();
     ui.addTask(task);
     ui.resetForm();
-    ui.showMessage('Task Added successfully', 'success')
-
-
-});
+    ui.showMessage('Task Added successfully', 'success');
+})
 
 document.getElementById('todo-list').addEventListener('click', function (e) {
     const ui = new UI()
-    ui.actionTask(e.target);
-    
-})
-
-
-
-
-
-//TODOLIST VALUE
-/*const name = document.getElementById('name').value;
-const contents = document.getElementById('contents').value;
-const time = document.getElementById('time').value;
-*/
-
-
-
-    // ui.completeTask(e.target);
-
-
+    ui.actionTask(e.target);    
+});
