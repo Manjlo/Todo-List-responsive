@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="check.svg" type="image/svg">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Jhonatan's Todo list</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center" >
+        <a class="navbar-brand" href="#">
+            <img src="check.png" alt="" width="40" height="40" class="d-line-block allign-text-top">
+            Jhonatan's To do list
+        </a>
+    </nav>
+    <div class="container" id="all"> 
+        <div id="app" class="row pt-5" >
+             <!--Form-->
+            <div class="col-md-4" >
+                <div  class="card">
+                    <div class="card-header">
+                        <h4>Add a task</h4>
+                    </div>
+                    <form id="todo-list-form" class="card-body shadow">
+                       <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Task Name" id="name">
+                       </div>
+                       <div>
+                           <textarea id="contents" class="form-control" rows="3" placeholder="Contents"></textarea>
+                       </div>
+                       <div class="form-group">
+                           <label class="col-form-label text-muted" for="dateInput">Date</label>
+                           <input type="date" placeholder="date" class="form-control" id="dateInput" required>
+                       </div>
+                       <div>
+                           <label for="hour" class="col-form-label text-muted">Time</label>
+                           <input  type="time" id="time" class="form-control timepicker" required>
+                       </div>
+                       <div>
+                           <input type="submit" value="Send" class="btn btn-primary mt-3 pt-2 pb-2 btn-block">
+                       </div>
+                    </form>
+                </div>        
+            </div>                   
+             <!-- Todo list-->
+            <div id="todo-list" class="col-md-8">
+                <div class="card-header mb-3">
+                    <div class= justify-content-center">
+                        <h4 class="text-center">Tasks</h4>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
